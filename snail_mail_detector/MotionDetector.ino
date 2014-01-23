@@ -6,9 +6,7 @@
  Writes to Serial Port the Motion Detected Alert message
    
  The circuit: 
- * Digital PIR Sensor Connected to Pin 3
- * Xbee RX Port connected Arduino TX0
- * Xbee TX Port connected to Arduino RX0:
+ * For wiring schematic please visit: http://highmu.com/?p=69
  
  created 01 Jan. 2014
  by Daniel Roman
