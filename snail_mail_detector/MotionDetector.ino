@@ -1,7 +1,7 @@
 /*
   Snail Mail Detector v1.0
  
- Initializes PIR Sensor and waits for it achieve calibration (50 secs)
+ Initializes PIR Sensor and waits for it to calibrate (50 secs)
  Checks pin 3 (pirPin) to detect state change when Digital PIR Sensor detects motion.
  Writes to Serial Port the Motion Detected Alert message
    
