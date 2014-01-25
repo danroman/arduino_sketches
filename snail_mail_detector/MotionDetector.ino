@@ -30,21 +30,18 @@ void setup() {
     Serial.print(".");
     delay(1000);
   }
+  
   Serial.println(" done");
   Serial.println("SENSOR ACTIVE");
   delay(50);
   
-  // Uncomment the following 6 lines to enable Xbee pin sleep mode
-  //Serial.println("Putting Xbee into pin sleep mode");
-  //Serial.flush();
-  //delay(1100);      //Delay required before trying to enter command mode
-  //Serial.print("+++");
-  //delay(1100);
-  //Serial.println("ATSM 1"); // Set Xbee to Sleep Mode 1 (Pin sleep)        
-  ////////////////////// sleep mode code end /////////
 }
 
 void loop() {
+
+  // read Arduino pin to detect change in logic state
+  // When motion is detected, logic state should be LOW
+  // and HIGH when there is no motion detected
   val = digitalRead(pirPin);
  
   if (val == LOW) {
